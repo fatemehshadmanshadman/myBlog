@@ -1,0 +1,18 @@
+{% load static %}
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>about</title>
+        <link rel="stylesheet" href="{% static 'nn.css'%}">
+    </head>
+
+    <body>
+        <h1>list of articles </h1>
+        {% for x in articles%}
+        <h3><a href=#>{{x.title}}</a><h3>
+        <p>{{x.date}}</p>
+        <p>{{x.snippet}}</p>
+        {% endfor %}
+    </body>
+
+</html>
